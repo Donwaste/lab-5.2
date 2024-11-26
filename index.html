@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script defer src="index.js"></script>
+</head>
+<body>
+    <div class="music-player">
+        <h2>Music Player</h2>
+        
+        <div class="current-song">
+            <img src="" id="current-cover">
+            <div class="current-song-info">
+                <p id="current-artist">Artist Name</p>
+                <p id="current-title">Song Title</p>
+                <p id="current-time">0:00 / 0:00</p>
+            </div>
+        </div>
+        
+        <div class="controls">
+            <button onclick="previous()"><img src="buttons/prev.png" alt="Previous"></button>
+            <button onclick="playPause()"><img src="buttons/play.png" alt="Play" id="play-pause-icon"></button>
+            <button onclick="next()"><img src="buttons/next.png" alt="Next"></button>
+        </div>
+
+        <div class="volume-control">
+            <label>Volume:</label>
+            <input type="range" min="0" max="1" step="0.1" onchange="adjustVolume(this.value)">
+        </div>
+        
+        <div class="time-control">
+            <input type="range" id="seek-slider" min="0" max="100" value="0" step="1" oninput="seekTo(this.value)">
+        </div>
+        
+        <div class="song-list" id="song-list"></div>
+        <button id="add-song-button">Add Song</button>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" id="close-modal">&times;</span>
+            <h3>Add New Song</h3>
+            <input type="text" id="artist" placeholder="Artist Name" required>
+            <input type="text" id="song-name" placeholder="Song Name" required>
+            <input type="file" id="song-file" accept="audio/*" required>
+            <input type="file" id="cover-file" accept="image/*" required>
+            <button id="create-song">Create Song</button>
+        </div>
+    </div>
+</body>
+</html>

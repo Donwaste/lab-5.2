@@ -1,0 +1,37 @@
+[
+  { 
+    "id": 1, 
+    "artist": "Алексей Левкин",
+    "name": "Всё идёт по плану", 
+    "path": "songs/Всё идёт по плану.mp3", 
+    "cover": "images/Всё идёт по плану.jpg"
+  },
+  { 
+    "id": 2, 
+    "artist": "My Skin Is Multicam",
+    "name": "Zero Tolerance", 
+    "path": "songs/Zero Tolerance.mp3", 
+    "cover": "images/Zero Tolerance.jpg"
+  },
+  {
+    "id": 3, 
+    "artist": "Funeral Candies",
+    "name": "Меса Коло Дуба", 
+    "path": "songs/Меса Коло Дуба.mp3", 
+    "cover": "images/Меса Коло Дуба.jpg"
+  },
+  {
+    "id": 4, 
+    "artist": "Ross Bugden",
+    "name": "Something Wicked", 
+    "path": "songs/Something Wicked.mp3", 
+    "cover": "images/Something Wicked.jpg"
+  },
+  {
+    "id": 5, 
+    "artist": "My Skin Is Multicam",
+    "name": "Centuria", 
+    "path": "songs/Centuria.mp3", 
+    "cover": "images/Centuria.png"
+  }
+]
